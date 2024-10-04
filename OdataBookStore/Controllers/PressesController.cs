@@ -1,15 +1,14 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using OdataBookStore.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Formatter;
 using Microsoft.AspNetCore.OData.Query;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using OdataBookStore.Models;
 
-namespace OdataBookStore.Controllers
-{/*
-    [Route("api/[controller]")]
-    [ApiController]*/
+namespace _26_BuiVanToan_OdataBookStore.Controllers
+{
     public class BooksController : ODataController
     {
         private BookStoreContext db;
